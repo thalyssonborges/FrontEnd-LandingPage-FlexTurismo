@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+
+    /*Nav*/
+    --bg-main-color: #597BC3;
+    --logo-color: #fff;
+    --menu-color: #fff;
+
+    --logo-font: 38px;
+    --logo-font-weight: 500;
+    --menu-font: 22px;
+    --menu-font-weight: 400;
+
+    /*Cabeçalho*/
+    --C-title-h1-color: #597BC3;
+    --C-subTitle-h3-color: #000;
+    --C-btn-saibaMais-color: #fff;
+    --C-btn-saibaMais-bg: #597BC3;
+    --C-btn-saibaMais-hover-bg: #F18B4B;
+    --C-btn-saibaMais-border: none;
+
+    --C-tittle-h1-font: 60px;
+    --C-subTitle-h3-font: 30px;
+    --C-subTitle-h3-weight: none;
+    --C-btn-saibaMais-font: 20px;
+    --C-btn-saibamais-borderRadius: 25px;
+    --C-btn-saibaMais-width: 260px;
+    --C-btn-saibaMais-padding: 8px 40px;
+
+    /*Quem Somos*/
+    --QS-title-h2-color: #597BC3;
+    --QS-text-p-color: #597BC3;
+    --QS-title-h2-weight: bold;
+    --QS-title-h2-font: 44px;
+    --QS-text-p-font: 18px;
+    --QS-text-p-font-weight: 500;
+    --QS-subTitle-h3-color: #fff;
+    --QS-subTitle-h3-font: 25px;
+
+
+    /*Serviços*/
+    --S-title-h2-color: #fff;
+    --S-title-h2-weight: bold;
+    --S-title-h2-font: 44px;
+    --S-subTitle-h3-font: 24px;
+    --S-subTitle-h3-weight: none;
+    --S-subTitle-h3-color: #fff;
+    --S-btn-ComprarAgora-font: 18px; 
+    --S-btn-ComprarAgora-font-weigth: 600;
+    --S-btn-ComprarAgora-bg: #fff;
+    --S-btn-ComprarAgora-color: #597BC3;
+    --S-btn-ComprarAgora-padding: 18px 60px;
+    --S-btn-ComprarAgora-borderRadius: 25px;
+    --S-btn-ComprarAgora-border: none;
+    --S-btn-ComprarAgora-houver-bg: #F18B4B;
+    --S-btn-ComprarAgora-houver-color: #fff;
+
+    /*Planos*/
+    --P-title-h2-color: #597BC3;
+    --P-title-h2-font: 44px;
+    --P-title-h3-color: #597BC3;
+    --P-title-h3-font: 25px;
+
+
+    /*Footer*/ 
+    --F-bg: #597BC3;
+    --F-color: #fff;
+    --F-font: 14px;
+}
+/* ========================== HEADER ============================*/
+/* Nav */
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 100px;
+}
+
+nav {
+    background-color: var(--bg-main-color);
+    min-height: 150px;
+    line-height: 150px;
+}
+.nav-container{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+.nav-logo{
+    font-size: var(--logo-font);
+    font-weight: var(--logo-font-weight);
+    color: var(--logo-color);
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu li{
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-left: 30px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: var(--menu-color);
+    font-size: var(--menu-font);
+    font-weight: var(--menu-font-weight);
+    height: 30px;
+    line-height: 30px;
+}
+.nav-menu li:hover{
+    color: aliceblue;
+    padding-bottom: 6px;
+    border-bottom: 4px solid #F18B4B;
+}
+
+/* Cabeçalho */
+.cabecalho{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho-containerLeft {
+    margin-left: 110px;
+}
+.cabecalho-containerLeft h1{
+    font-size: var(--C-tittle-h1-font);
+    color: var(--C-title-h1-color);
+    margin-bottom: 20px;
+}
+.cabecalho-containerLeft h3{
+    font-size: var(--C-subTitle-h3-font);
+    font-weight: var(--C-subTitle-h3-weight);
+    color: var(--C-subTitle-h3-color);
+    margin-bottom: 40px;
+}
+.btn-saibaMais{
+    font-size: var(--C-btn-saibaMais-font);
+    border: var(--C-btn-saibaMais-border);
+    border-radius: var(--C-btn-saibamais-borderRadius);
+    color: var(--C-btn-saibaMais-color);
+    background-color: var(--C-btn-saibaMais-bg);
+    width: var(--C-btn-saibaMais-width);
+    padding: var(--C-btn-saibaMais-padding);
+    cursor: pointer;
+}
+.btn-saibaMais:hover{
+    background-color: var(--C-btn-saibaMais-hover-bg);
+}
+.cabecalho-containerRight img{
+    max-width: 100%;
+}
+
+
+/*================================================================ */
+
+/* Quem Somos */
+.quemSomos{
+    margin-top: 110px;
+    margin-bottom: 110px;
+    display: flex; 
+    align-items: flex-end;
+}
+.quemSomos-containerLeft{
+    flex: 1;
+}
+.quemSomos-containerLeft img{
+    width: 100%;
+}
+.quemSomos-containerRight{
+    flex: 1;
+    margin-left: 100px;
+}
+.quemSomos-containerRight h2{
+    font-size: var(--QS-title-h2-font);
+    font-weight: var(--QS-title-h2-weight);
+    color: var(--QS-title-h2-color);
+    margin-bottom: 50px;
+}
+.quemSomos-containerRight p{
+    margin-left: 10px;
+    margin-bottom: 30px;
+    font-size: var(--QS-text-p-font);
+    color: var(--QS-text-p-color);
+}
+
+
+/*================================================================ */
+
+/* Serviços */
+.servicos{
+    background-color: var(--bg-main-color);
+    min-height: 600px;
+    padding-bottom: 100px;
+}
+.servicos h2{
+    padding-top: 80px;
+    font-size: var(--S-title-h2-font);
+    font-weight: var(--S-title-h2-weight);
+    color: #fff;
+}
+.cards{
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+.card{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 40px;
+    
+}
+.card img{
+    max-width: 100%;
+}
+.card h3{
+    margin: 40px 0px;
+    font-size: var(--S-subTitle-h3-font);
+    color: var(--S-subTitle-h3-color);
+}
+.card button{
+    font-size: var(--S-btn-ComprarAgora-font);
+    color: var(--S-btn-ComprarAgora-color);
+    background-color: var(--S-btn-ComprarAgora-bg);
+    padding: var(--S-btn-ComprarAgora-padding);
+    width: var(--S-btn-ComprarAgora-width);
+    border-radius: var(--S-btn-ComprarAgora-borderRadius);
+    border: var(--S-btn-ComprarAgora-border);
+    font-weight: var(--S-btn-ComprarAgora-font-weigth);
+}
+.card button:hover{
+    cursor: pointer;
+    background: var(--S-btn-ComprarAgora-houver-bg);
+    color: var(--S-btn-ComprarAgora-houver-color);
+}
+
+/*================================================================ */
+
+/* Planos */
+.planosContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.planos h2{
+    margin-top: 100px;
+    font-size: var(--P-title-h2-font);
+    color: var(--P-title-h2-color);
+    margin-bottom: 50px;
+}
+.plano{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 5px solid #597BC3;
+    min-height: 200px;
+}
+.plano h3{
+    font-size: var(--P-title-h3-font);
+    border-bottom: 3px solid #597BC3;
+    color: var(--P-title-h3-color);
+    padding-bottom: 10px;
+}
+.lista-planos{
+    padding: 50px 25px;
+    list-style: none;
+}
+.itens-lista{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.itens-lista::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #597BC3;
+    margin-right: 10px;
+}
+
+/*================================================================ */
+
+/* Footer */
+footer{
+    margin-top: 150px;
+    background-color: var(--F-bg);
+    
+}
+
+.footerContainer{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--F-color);
+    font-size: var(--F-font);
+    flex: 1;
+}
+
+/*================================================================ */
+
+/* Responsividade */
+@media(max-width: 1300px){
+
+    .cabecalho{
+        flex-direction: column;
+    }
+    .cabecalho-containerLeft{
+        margin-bottom: 60px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .quemSomos{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .quemSomos-containerRight{
+        margin: 0;
+    }
+
+    .quemSomos-containerLeft img{
+        width: 100%;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+    }
+
+    .cards h3{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    
+    .planosContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .plano{
+        margin-bottom: 20px;
+        margin: 10px;
+    }
+
+}
+
+@media(max-width: 1020px){
+    .container{
+        text-align: center;
+    }
+    .nav-menu li{
+        display: none;
+    }
+    .nav-menu ul::after{
+        display: inline;
+        content:"";
+        width: 50px;
+        height: 5px;
+        border-top: 5px solid white;
+        border-bottom: 5px solid white;
+        padding: 5px 0;
+    }
+    .cabecalho-containerLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){
+    .footerContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .desenvolvedor{
+        padding-top: 15px;
+    }
+    .container{
+        align-items: center;
+        padding: 15px;
+    }
+    nav{
+        padding-top: 20px;
+        line-height: normal;
+        min-height: auto;
+    }
+    .nav-container{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .nav-logo{
+        padding-bottom: 20px;
+    }
+
+}
